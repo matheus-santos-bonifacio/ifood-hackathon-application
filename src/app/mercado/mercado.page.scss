@@ -1,0 +1,71 @@
+ion-toolbar {
+    display: inline-block;
+    height: 80px;
+    --background: #FD031F;
+   
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+ion-icon{
+    color: white;
+    font-size: 30px;
+    }
+
+    .button-entrega ion-icon {
+        color: #EA1D2C;
+    }
+.button-entrega{
+        background-color: #F6F6F6;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 8px;
+    }
+
+    .free {
+        color: #17A261;
+    }
+
+    .two-buttons {
+        display: flex;
+        justify-content: space-around;
+    }
+
+h4 {
+    display: inline-block;
+}
+
+.stars {
+    height: 20px;
+    display: inline-block;
+}
+
+.logo-mercado {
+    height: 50px;
+}
+
+.top-banner{
+    padding: 0 4%;
+}
+
+main {
+    padding: 0 3%;
+}
+
+.top-conteiner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.list-sale {
+    border: solid 1px #A6A29F;
+    padding: 2% 30%;
+}
