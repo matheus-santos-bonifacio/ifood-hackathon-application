@@ -1,0 +1,79 @@
+ion-title {
+    font-size:22px;
+    color: #3F3E3E;
+   }
+
+ion-icon {
+    
+    font-size:22px;
+    color: #EA1D2C;
+}
+
+.card-one ion-img {
+    height: 20%;
+    
+    position: relative;
+    float: left;
+}
+
+ion-card {
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    justify-content: space-between;
+}
+
+.cardapio::after {
+    position: absolute;
+    content: "Novo";
+    color: white;
+    background-color: red;
+    padding: 2px 4px;
+    border-radius: 8px;
+    right: 20px;
+    top: 10px;
+
+}
+
+ion-card ion-img  {
+    height: 60px;
+
+}
+
+.itens-cards{
+    display: flex;
+    align-items: center;
+}
+
+.card-one {
+    display: flex;
+    gap: 30px;
+    padding: 5%;
+    align-items: center;
+    border: solid 1px #E5E5E5;
+}
+
+
+.toolbar-title {
+    border: none;
+}
+
+
+.user-name {
+    position: relative;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+       
+}
+
+.card-icon {
+    position: relative;
+    float: right;
+}
+
+.novo {
+    height: 6%;
+}
