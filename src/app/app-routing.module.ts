@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'mercado',
+    loadChildren: () => import('./mercado/mercado.module').then( m => m.MercadoPageModule)
+  },
 
 ];
 

@@ -3,6 +3,16 @@ ion-title {
     color: #3F3E3E;
    }
 
+   ion-toolbar {
+       display: inline-block;
+   }
+
+   .container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
 ion-icon {
     
     font-size:22px;
