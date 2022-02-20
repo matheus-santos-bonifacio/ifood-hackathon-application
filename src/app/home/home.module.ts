@@ -4,6 +4,8 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
+import { slideOpts } from './slide-configuration';
+
 import { HomePageRoutingModule } from './home-routing.module';
 
 
@@ -16,4 +18,6 @@ import { HomePageRoutingModule } from './home-routing.module';
   ],
   declarations: [HomePage]
 })
-export class HomePageModule {}
+export class HomePageModule {
+  slideOpts = slideOpts;
+}

@@ -1,5 +1,128 @@
 <ion-header [translucent]="true"> </ion-header>
 
 <ion-content [fullscreen]="true">
-  <div class="container"></div>
+  <div class="container">
+    <ion-select placeholder="R. da sorte, 333" id="address">
+    </ion-select>
+
+    <div id="header-links" >
+      <a id="current-page">Restaurantes</a>
+      <a [routerLink]="['/mercados']">Mercados</a>
+      <a [routerLink]="['#']">Bebidas</a>
+    </div>
+
+    <ion-segment>
+      <ion-segment-button value="restaurant">
+        <ion-label>Restaurantes</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="groceries">
+        <ion-label>Mercados</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="drinks">
+        <ion-label>Bebidas</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+    <div id="quick-commands">
+      <ion-chip>
+        <ion-label>Ordenar</ion-label>
+      </ion-chip>
+
+      <ion-chip>
+        <ion-label>Pra retirar</ion-label>
+      </ion-chip>
+
+      <ion-chip>
+        <ion-label>Entrega grátis</ion-label>
+      </ion-chip>
+    </div>
+
+    <!-- Quick options -->
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-avatar>
+            <img src="assets/icon/hamburger.jpg" alt="hamburger" />
+          </ion-avatar>
+          <p>Hamburger</p>
+        </ion-col>
+
+        <ion-col>
+          <ion-avatar>
+            <img src="assets/icon/bibimbap.png" alt="hamburger" />
+          </ion-avatar>
+          <p>Hamburger</p>
+        </ion-col>
+
+        <ion-col>
+          <ion-avatar>
+            <img src="assets/icon/sushi.png" alt="sushi" />
+          </ion-avatar>
+          <p>Hamburger</p>
+        </ion-col>
+
+        <ion-col>
+          <ion-avatar>
+            <img src="assets/icon/mcdonalds.png" alt="mcdonalds" />
+          </ion-avatar>
+          <p>Hamburger</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide>
+        <img src="assets/img/food-delivery-01.jpg" class="food-delivery-img" />
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/img/food-delivery-01.jpg" class="food-delivery-img" />
+      </ion-slide>
+      <ion-slide>
+        <img src="assets/img/food-delivery-01.jpg" class="food-delivery-img" />
+      </ion-slide>
+    </ion-slides>
+
+
+    <div id="market-places">
+      <div id="market-places-header">
+        <span>Ultimas lojas</span>
+
+        <a [routerLink]="['/home']" >Ver mais</a>
+      </div>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-avatar>
+              <img src="assets/icon/hamburger.jpg" alt="hamburger" />
+            </ion-avatar>
+            <p>Hamburger</p>
+          </ion-col>
+
+          <ion-col>
+            <ion-avatar>
+              <img src="assets/icon/bibimbap.png" alt="hamburger" />
+            </ion-avatar>
+            <p>Hamburger</p>
+          </ion-col>
+
+          <ion-col>
+            <ion-avatar>
+              <img src="assets/icon/sushi.png" alt="sushi" />
+            </ion-avatar>
+            <p>Hamburger</p>
+          </ion-col>
+
+          <ion-col>
+            <ion-avatar>
+              <img src="assets/icon/mcdonalds.png" alt="mcdonalds" />
+            </ion-avatar>
+            <p>Hamburger</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
 </ion-content>
